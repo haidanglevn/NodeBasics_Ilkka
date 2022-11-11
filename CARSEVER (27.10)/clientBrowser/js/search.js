@@ -15,7 +15,7 @@
   async function send() {
     try {
       const licence = licenceInput.value;
-      resultset.innerHTML = "";
+      resultset.innerHTML = ""
       const data = await fetch(
         `http://localhost:3000/search/bylicence?value=${licence}`,
         { mode: "cors" }
