@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="styles/basicStyles.css" />
+  </head>
+  <body>
+    <main>
+      <h1><%= header1 %></h1>
+      <form action="<%= action %>" method="POST">
+        <div>
+          <p>
+            <label for="number">Cat number:</label>
+            <input
+              type="text"
+              name="number"
+              id="number"
+              size="5"
+              value="<%= number.value %>"
+              <%="number.readonly"
+              %
+            />>
+          </p>
+          <p>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              size="15"
+              value="<%= name.value %>"
+              <%="name.readonly"
+              %
+            />>
+          </p>
+          <p>
+            <label for="yob">Year of birth:</label>
+            <input
+              type="text"
+              name="yob"
+              id="yob"
+              size="25"
+              value="<%= yearOfBirth.value %>"
+              <%="yearOfBirth.readonly"
+              %
+            />>
+          </p>
+          <p>
+            <label for="breed">Breed:</label>
+            <input
+              type="text"
+              name="breed"
+              id="breed"
+              size="10"
+              value="<%= breed.value %>"
+              <%="breed.readonly"
+              %
+            />>
+          </p>
+          <p>
+            <label for="length">Length:</label>
+            <input
+              type="text"
+              name="length"
+              id="length"
+              size="10"
+              value="<%= length.value %>"
+              <%="length.readonly"
+              %
+            />>
+          </p>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <a href="/"><button>Home</button></a>
+    </main>
+  </body>
+</html>
